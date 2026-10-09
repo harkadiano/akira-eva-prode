@@ -8,7 +8,3 @@
 
 ## Deploy
 Push a GitHub > Settings > Pages > Source: GitHub Actions
-
-## Codigo de acceso default: alanna2026
-## Contraseña admin default: alanna2026
-
