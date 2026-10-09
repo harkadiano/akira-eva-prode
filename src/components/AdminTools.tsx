@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { putSharedItem, getSharedItem, listSharedItems, StorageError } from '../lib/storage';
 import { LOOK_MAP } from './lookOptions';
 import { useTheme } from './ThemeContext';
-const ADMIN_TABLE='prode-admin';const DK='bet-deadline';const DD='2026-10-14';const DT='23:59';const TABLE='baby-bets';
+const ADMIN_TABLE='prode-admin';const DK='bet-deadline';const DD='2026-10-22';const DT='23:59';const TABLE='baby-bets';
 
 export const DeadlineManager:React.FC=()=>{
   const{theme}=useTheme();const[dd,setDd]=useState(DD);const[dt,setDt]=useState(DT);const[sv,setSv]=useState(false);const[msg,setMsg]=useState('');

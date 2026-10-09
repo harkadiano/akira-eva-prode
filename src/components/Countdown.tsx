@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from './ThemeContext';
-const TARGET = new Date('2026-10-16T00:00:00').getTime();
+const TARGET = new Date('2026-10-22T00:00:00').getTime();
 const calc = () => { const d=TARGET-Date.now(); if(d<=0)return{days:0,hours:0,minutes:0,seconds:0,arrived:true}; return{days:Math.floor(d/864e5),hours:Math.floor(d%864e5/36e5),minutes:Math.floor(d%36e5/6e4),seconds:Math.floor(d%6e4/1e3),arrived:false}; };
 export const Countdown: React.FC = () => {
   const [t,setT]=useState(calc); const{theme}=useTheme();
